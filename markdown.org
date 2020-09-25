@@ -1,0 +1,23 @@
+#+title: Markdown
+
+- =C-c C-c l= :: Live preview
+- =C-c C-c n= :: reNumber
+- =C-c C-c c= :: Check refs
+
+** Style
+- =C-c C-s b= :: blockquote
+- =C-c C-s c= :: code
+- =C-c C-s d= :: strikethrough
+- =C-c C-s e= :: em/italic
+- =C-c C-s s= :: strong/bold
+
+** Anchors (Links)
+- =C-c C-a L= :: ref/Link
+- =C-c C-a l= :: link
+- =C-c C-a f= :: footnote
+- =C-c C-a r= :: ref
+- =C-c C-a u= :: URI
+- =C-c C-a w= :: wiki link
+
+
+(Ironic that this is a .org file.)

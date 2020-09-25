@@ -1,0 +1,7 @@
+#+title: VTerm
+
+- =’ v v= :: open existing vterm
+- =C-c C-t= :: enter text mode (for select/copy)
+- =C-c C-p= :: jump to prev prompt
+- =C-c C-n= :: jump to next prompt
+- =C-c C-c= :: C-c (interrupt)

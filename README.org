@@ -1,3 +1,26 @@
 * REFCARDS
 
-This is a collection of .org files that serve as small reference cheat-sheets.
+This is a collection of .org files that serve as small reference
+cheat-sheets.
+
+** USAGE
+
+Create your own repo containing your custom refcards, or point to
+someone else’s.  I like to keep mine locally at =~/doc/refcards=.
+
+Install [[https://github.com/abo-abo/swiper][Ivy]].
+
+You can look up any refcard up quickly with =C-h r= by putting this in
+your Emacs =init.el=.
+
+
+#+begin_src elisp
+(defun counsel-refcards ()
+  "Search local refcards of your own devising."
+  (interactive)
+  (let* ((default-directory "~/doc/refcards")
+         (cands (split-string (shell-command-to-string "ls") nil t)))
+    ;; (ivy-read "Topic: " cands :action #'split-window-vertically-balancedly :caller 'counsel-refcards)))
+    (ivy-read "Topic: " cands :action #'my-find-file-below)))
+(global-set-key (kbd "C-h r") 'counsel-refcards)
+#+end_src

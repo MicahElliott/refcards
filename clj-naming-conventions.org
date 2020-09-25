@@ -11,8 +11,8 @@
 =- ?foo=    :: Optional val (emphasize that val may be nil).
 =- foo*=    :: A variation of `foo` (e.g. `foo*` macro vs `foo` fn).
 =- -foo=    :: Public implementation detail or intermediate (e.g. uncoerced) val.
-=- >foo=    :: Val \"to foo\" (e.g. >sender, >host), or fn to put/coerce/transform.
-=- <foo=    :: Val \"from foo\" (e.g. <sender, <host), or fn to take/coerce/transform.
+=- >foo=    :: Val "to foo" (e.g. >sender, >host), or fn to put/coerce/transform.
+=- <foo=    :: Val "from foo" (e.g. <sender, <host), or fn to take/coerce/transform.
 =- ->foo=   :: Fn to put/coerce/transform.
 
 From: https://github.com/ptaoussanis/encore/blob/master/src/taoensso/encore.cljc#L12

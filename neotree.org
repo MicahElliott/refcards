@@ -1,6 +1,6 @@
 * Neotree
 
-- n       :: /n/ext node
+- n       :: /[n]/ext node
 - p       :: /p/rev node
 - s       :: next /s/ibling
 - S       :: prev /S/ibling

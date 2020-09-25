@@ -1,0 +1,26 @@
+#+TITLE: HTTP Codes
+
+** Success
+- 200 :: OK
+- 201 :: Created (POST, PUT)
+- 204 :: No Content
+
+** Redirection
+- 304 :: Not modified (for caching)
+- 301 :: Moved permanently (new URL given in response)
+
+** Client Errors
+- 400 :: Bad request (invalid syntax)
+- 401 :: Unauthorized (client must authenticate)
+- 403 :: Forbidden (identity is known, but…)
+- 404 :: Not found
+- 408 :: Request timeout
+- 409 :: Conflict
+- 429 :: Too many requests
+
+** Server Errors
+- 500 :: Internal server error
+- 501 :: Not implemented
+- 502 :: Bad gateway
+- 503 :: Service unavailable (down for maintenance, overloaded)
+- 504 :: Gateway timeout

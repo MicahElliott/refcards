@@ -1,4 +1,4 @@
-* Clojure Naming Conventions
+#+TITLE: Clojure Naming Conventions
 
 =- **foo**= :: Dynamic var.
 =- foo!=    :: Fn with side effects, or that should otherwise be used cautiously.

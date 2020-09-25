@@ -1,0 +1,24 @@
+#+TITLE: Org Mode
+
+- =C–c C-,= :: Insert template (Comment, example, quote, source), [[https://orgmode.org/manual/Structure-Templates.html][link]]
+- =C-c C-l= :: Insert link
+- =S-TAB=   :: Expand block level toggles
+- =C-RET=   :: Insert new bullet
+- =C-c D=   :: Insert date, ex: <2020-09-25 Fri>
+- =C-c C-t= :: Create TODO
+- =C-c C-o= :: Open link
+- =C-c e=       :: Toggle emphasis markers
+- =C-c C-x C-l= :: Toggle link display
+
+** Syntax
+
+- *bold*
+- /italic/
+- _underline_
+- =code=
+- +strikethrouth+
+
+
+** Commands
+
+- org-preview-html-mode

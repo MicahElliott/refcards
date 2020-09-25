@@ -1,18 +1,18 @@
 * Symbol Overlay
 
-M-i  :: symbol-overlay-put
-M-n  :: symbol-overlay-switch-forward
-M-p  :: symbol-overlay-switch-backward
-<f7> :: symbol-overlay-mode
-<f8> :: symbol-overlay-remove-all
+- M-i  :: symbol-overlay-put
+- M-n  :: symbol-overlay-switch-forward
+- M-p  :: symbol-overlay-switch-backward
+- <f7> :: symbol-overlay-mode
+- <f8> :: symbol-overlay-remove-all
 
-i :: symbol-overlay-put
-n :: symbol-overlay-jump-next
-p :: symbol-overlay-jump-prev
-w :: symbol-overlay-save-symbol
-t :: symbol-overlay-toggle-in-scope
-e :: symbol-overlay-echo-mark
-d :: symbol-overlay-jump-to-definition
-s :: symbol-overlay-isearch-literally
-q :: symbol-overlay-query-replace
-r :: symbol-overlay-rename
+- i :: symbol-overlay-put
+- n :: symbol-overlay-jump-next
+- p :: symbol-overlay-jump-prev
+- w :: symbol-overlay-save-symbol
+- t :: symbol-overlay-toggle-in-scope
+- e :: symbol-overlay-echo-mark
+- d :: symbol-overlay-jump-to-definition
+- s :: symbol-overlay-isearch-literally
+- q :: symbol-overlay-query-replace
+- r :: symbol-overlay-rename

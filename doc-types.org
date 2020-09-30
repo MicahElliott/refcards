@@ -1,0 +1,52 @@
+#+title: Document Types
+
+- Glossary :: most of the key terms
+
+- Style Guide :: refer to a community guide, plus augmentation, and tooling
+
+- ADRs :: Use the ADR tool to generate from your template
+
+- Contributing :: Rules for how to make changes, plus list of devs who contribute
+
+- Changelog :: Living list of changes by release (maybe automatic and
+  managed elsewhere)
+
+- README :: Explain the docs repo and what still belongs in
+  Confluence; list the pertinent docs in the repo
+
+- Noobs :: Getting started guide
+
+- Editor Configs :: Everyone should try to get their editors to match
+  the style guide; this is a list of configs to conform them
+
+- ENV/Config :: describe categories of configs
+
+- Education :: List of books/pages to get up-to-speed on deps
+
+- Customers :: Who this project serves
+
+- History :: How this project has evolved (might be handled by ADRs)
+
+- PR Template :: Used by github to seed each new PR
+
+- Ways We Work :: story lifecycle and workflow, agile/scrum/kanban,
+  release process, environments for dev, stage, prod, CI tools
+
+- Testing :: how do we track/care about code coverage, how much do
+  devs test vs QA
+
+- Documentation :: How we document: here (of course!), docstrings (and
+  their style, eg, markdown)
+
+** Checklists
+
+- PR Checklist :: All the steps that should be taken before asking for
+  review
+
+** Generated
+
+- Marginalia :: literate code
+
+- Codox ::
+
+- API docs :: Swagger (most likely), how to access/generate them

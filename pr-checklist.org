@@ -1,0 +1,45 @@
+#+title: Pull Request Checklist
+
+- Streamline/automate as much of this as possible
+
+- Squash down to a minimal set of changes, often one
+
+- Organize commits into meaningful units; ideally none in error states
+
+- Make [[https://chris.beams.io/posts/git-commit/][excellent]] [[https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/][commit]] [[https://gist.github.com/turbo/efb8d57c145e00dc38907f9526b60f17][messages]], and consider using [[https://github.com/carloscuesta/gitmoji/commits/master][emojis]]!
+
+- Take/attach screenshots
+
+- Add your own inline comments to PR
+
+- Assign to yourself
+
+- Mark as not ready to merge if so
+
+- Indicate if there are known perf
+
+- Follow the team commit conventions: length, tags
+
+- Write tests
+
+- Run any linters that aren’t part of CI
+
+- Ensure you have docstrings for new functions, and spell-check them
+
+- Ensure stakeholders are aware of the changes
+
+- Change Jira status and maybe add a comment
+
+- Follow the PR template (when relevant)
+
+- Watch for github notifications on feedback (browser alerter
+  extension recommended)
+
+- Follow the [[https://medium.com/@biratkirat/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385][Boy Scout Rule]]: leave the code cleaner than how you found
+  it: fix typos, indentation, minor refactoring, DCE, forgotten
+  linting, etc
+
+- Document shortcuts and trade-offs
+
+- If for some reason you have to make a bunch of squashable commits,
+  might as well [[http://whatthecommit.com/][have fun with it]].

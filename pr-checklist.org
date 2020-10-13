@@ -2,13 +2,15 @@
 
 - Streamline/automate as much of this as possible
 
-- Squash down to a minimal set of changes, often one
+- Explain what changed and why
+
+- Take/attach screenshots
 
 - Organize commits into meaningful units; ideally none in error states
 
-- Make [[https://chris.beams.io/posts/git-commit/][excellent]] [[https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/][commit]] [[https://gist.github.com/turbo/efb8d57c145e00dc38907f9526b60f17][messages]], and consider using [[https://github.com/carloscuesta/gitmoji/commits/master][emojis]]!
+- Squash down to a minimal set of changes, often one
 
-- Take/attach screenshots
+- Make [[https://chris.beams.io/posts/git-commit/][excellent]] [[https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/][commit]] [[https://gist.github.com/turbo/efb8d57c145e00dc38907f9526b60f17][messages]], and consider using [[https://github.com/carloscuesta/gitmoji/commits/master][emojis]]!
 
 - Add your own inline comments to PR
 

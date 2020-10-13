@@ -1,4 +1,4 @@
-* Neotree
+#+title: Neotree
 
 - n       :: /[n]/ext node
 - p       :: /p/rev node
@@ -9,6 +9,8 @@
 - O       :: /O/pen recursively
 - A       :: /A/ll (full) screen
 - H       :: toggle /H/idden files
+- |       :: open in vertical split
+- -       :: open in horizontal split
 - C-c C-n :: /n/ew dir/file
 - C-c C-r :: /r/ename dir/file
 - C-c C-p :: co/p/y dir/file

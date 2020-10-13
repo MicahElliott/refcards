@@ -1,7 +1,10 @@
 #+TITLE: REFCARDS
 
 This is a collection of .org files that serve as small “reference cards”
-(aka cheat-sheets).
+(aka cheat-sheets).  Types of cards:
+
+- checklists (process steps)
+- cheats-sheets
 
 ** USAGE
 

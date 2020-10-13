@@ -7,8 +7,8 @@
 - =C-c D=   :: Insert date, ex: <2020-09-25 Fri>
 - =C-c C-t= :: Create TODO
 - =C-c C-o= :: Open link
-- =C-c e=       :: Toggle emphasis markers
 - =C-c C-x C-l= :: Toggle link display
+- =C-c e=       :: Toggle emphasis markers
 
 ** Syntax
 

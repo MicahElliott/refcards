@@ -1,5 +1,8 @@
 #+title: Document Types
 
+This describes either a heavily documented project or a standalone
+team/company docs repo.
+
 - Glossary :: most of the key terms
 
 - Style Guide :: refer to a community guide, plus augmentation, and tooling
@@ -11,8 +14,10 @@
 - Changelog :: Living list of changes by release (maybe automatic and
   managed elsewhere)
 
-- README :: Explain the docs repo and what still belongs in
-  Confluence; list the pertinent docs in the repo
+- README :: Explain the repo and what still belongs in Confluence;
+  list the pertinent docs in the repo
+
+- Screenshots/flow ::
 
 - Noobs :: Getting started guide
 
@@ -45,8 +50,8 @@
 
 ** Generated
 
-- Marginalia :: literate code
+- [[https://github.com/weavejester/codox][Codox]] :: docs generated from docstrings
 
-- Codox ::
+- [[https://github.com/gdeer81/marginalia][Marginalia]] :: literate programming
 
-- API docs :: Swagger (most likely), how to access/generate them
+- API docs :: Swagger/reitit (most likely), how to access/generate them

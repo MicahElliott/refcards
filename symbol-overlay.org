@@ -1,4 +1,6 @@
-* Symbol Overlay
+#+title: Symbol Overlay
+
+(this is basically a search/highlight mode)
 
 - M-i  :: symbol-overlay-put
 - M-n  :: symbol-overlay-switch-forward

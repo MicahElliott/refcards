@@ -1,5 +1,51 @@
 #+TITLE: Clojure Naming Conventions
 
+** Variables/Identifiers
+
+- a/arg :: argument
+- b :: other argument
+- c :: character (or collection)
+- data/d :: singular anything
+- el/e / ex/e :: element / exception
+- f :: function
+- g :: other function
+- hi/h ::
+- i :: item
+- j :: other item
+- k :: key
+- l/lo :: list or low
+- mid/m :: middle
+- n :: integer for count
+- o ::
+- p ::
+- qry/q :: query
+- r ::
+- s :: sequence (may be a string)
+- tmp/t :: temporary anything
+- u ::
+- v :: value
+- w ::
+- x :: misc
+- y :: cousin to x
+- z :: cousin to x
+- cur :: current item
+- acc :: accumulated
+- err :: error
+- some-int :: interceptor
+- some-fn :: a passed function
+- some-id :: identifier
+- _unused/_ :: only for documentation
+- coll/xs :: collection
+- cnt :: count
+- ctr :: counter
+- avg :: average
+- min/max ::
+
+*** Notes
+- Anything ending in ‘s’ means “plural” (collection/sequence)
+
+** Symbolic Affixes
+
 - =**foo**= :: Dynamic var.
 - =foo!=    :: Fn with side effects, or that should otherwise be used cautiously.
 - =foo?=    :: Truthy val or fn that returns truthy val.
@@ -16,3 +62,22 @@
 - =->foo=   :: Fn to put/coerce/transform.
 
 From: https://github.com/ptaoussanis/encore/blob/master/src/taoensso/encore.cljc#L12
+
+** Namespaces
+
+- str  :: clojure.string
+- set  :: clojure.set
+- pp   :: clojure.pprint
+- s    :: clojure.spec.alpha
+- t    :: clojure.test
+- io   :: clojure.java.io
+- walk :: clojure.walk
+- zip  :: clojure.zip
+- edn  :: clojure.edn
+- xml  :: clojure.data.xml
+- csv  :: clojure.data.csv
+- log  :: clojure.tools.logging
+- time :: java-time
+
+*** Notes
+- These can be automatically configured/required with =cljr-magic-require-namespaces=

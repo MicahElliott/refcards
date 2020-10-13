@@ -2,32 +2,35 @@
 
 ** Variables/Identifiers
 
-- a/arg :: argument
-- b :: other argument
-- c :: character (or collection)
-- data/d :: singular anything
-- el/e / ex/e :: element / exception
+- a/arg :: argument, atom
+- b :: other argument or beginning
+- c/cnt :: character or collection or count
+- data/d :: singular anything or day
+- el/e / ex/e :: element / exception / end
 - f :: function
 - g :: other function
-- hi/h ::
-- i :: item
+- hi/h :: high or height
+- i :: item or index
 - j :: other item
 - k :: key
 - l/lo :: list or low
-- mid/m :: middle
+- mid/m :: middle or map or month
 - n :: integer for count
 - o ::
 - p ::
 - qry/q :: query
-- r ::
+- r :: result
 - s :: sequence (may be a string)
-- tmp/t :: temporary anything
+- tmp/t :: temporary anything or time
 - u ::
-- v :: value
+- val/v :: value
 - w ::
-- x :: misc
-- y :: cousin to x
+- x :: misc, coordinate
+- y :: cousin to x or year
 - z :: cousin to x
+- amt :: amount
+- res :: result or response
+- req :: request
 - cur :: current item
 - acc :: accumulated
 - err :: error
@@ -42,7 +45,10 @@
 - min/max ::
 
 *** Notes
-- Anything ending in ‘s’ means “plural” (collection/sequence)
+- Anything ending in ‘s’ means “plural” (collection/sequence), eg: xs, vals
+- numeric suffixes like t0 and t1 can be used for comparison
+- Any character can represent one of a collection, eg: p in perfects
+- Paper: https://www.cs.huji.ac.il/~feit/papers/SingleLetter17ICPC.pdf
 
 ** Symbolic Affixes
 

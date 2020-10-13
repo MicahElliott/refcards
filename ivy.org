@@ -1,0 +1,13 @@
+#+title: Ivy Shortcuts
+
+- =C-c C-o= :: Save candidates to a new buffer
+- =M-o= :: Present options
+- =C-M-m= ::
+- =C-'= :: Use avy to quickly choose
+- =M-w= :: Save ivy contents to kill ring
+- =C-o= :: hydra
+- =M-o= :: more actions
+
+** Obscure
+
+- =C-j= :: Select/pin entry

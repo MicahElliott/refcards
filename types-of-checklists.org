@@ -1,0 +1,11 @@
+#+title: Types of Checklists
+
+This is mostly a list of things that I should still write, but also
+for brainstorming.
+
+- Pull requests
+- Releases
+- Blog post
+- Publishing anything
+- Workout routine
+- Camping

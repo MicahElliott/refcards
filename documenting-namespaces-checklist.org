@@ -1,0 +1,14 @@
+#+title: Checklist: Docstrings
+
+** Namespace/Module Level
+
+- some term definitions and conventions used
+- how and why some things were implemented
+- maybe TODOs
+- gotchas/quirks
+
+** Function Level
+
+- variable descriptions
+- return value
+- imperative of purpose

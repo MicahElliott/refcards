@@ -1,0 +1,33 @@
+#+title: Re-frame
+
+- EESV :: Events, Effects, Subscriptions, Views
+
+- Reagent :: react wrapper, rendering, view components, pub-sub ratoms
+
+- Re-frame :: organization for EESV, routing, stack/queue, effects,
+  state db
+
+- Signal graph :: event nodes traveling through handlers
+
+** Events
+- interceptors
+- mutation
+- =reg-event-db=, =reg-event-fx=
+
+** Subscriptions (queries)
+
+#+begin_src clojure
+(reg-sub
+ :color-change ; query-id
+ (fn [query-vec dynamic-vec] …) ; signal-fn, optional
+ (fn [db query-vec] …) ; computation-fn
+
+
+#+end_src
+
+=(subscribe [:color-change 3 :blue])=
+
+** Views
+   - hiccup components
+   - call: subscribe, dispatch
+   - =:<- [:foo]=) subscribe syntax

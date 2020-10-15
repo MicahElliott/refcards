@@ -1,6 +1,16 @@
 #+title: Pull Request Checklist
 
+** Prework
+- Run tests, record timings
+- Open key source files to understand change spots
+- Refine ticket descriptions, find what’s missing
+- Make a dummy commit to set the branch name
+- Push and create a WIP PR
+- Determine stakeholders, dates
+- Determine deliverables: docs, migrations, special testing
+
 ** Document
+- Update the ticket with better description
 - Document shortcuts and trade-offs
 - Explain what changed and why
 - Take/attach screenshots
@@ -19,7 +29,9 @@
   might as well [[http://whatthecommit.com/][have fun with it]].
 
 ** Communicate
-- Alert a reviewer (on slack) that this is ready for eyes
+- Pair with someone who knows background, capture notes/screenshots
+- Push back early if scope seems wrong/unclear
+- Alert a reviewer (on slack) when this is ready for eyes
 - Tell QA you’re ready for them to test
 - Ensure stakeholders are aware of the changes
 - Watch for github notifications on feedback (browser alerter
@@ -29,15 +41,20 @@
 - Assign to yourself
 - Mark as not ready to merge if so
 - Change Jira status and maybe add a comment
+- Assign reviewer(s)
+- Assign to QA when ready
+- Mark a target release
+- Put an event on the calendar if this needs to time with release
 
 ** Test
+- Run tests before you touch anything, note timings
 - Write tests, expand existing
-- Deploy to staging and test manually
+- Deploy to dev/staging and test manually
 
 ** General
 - Determine if this should be feature-flag guarded
 - Follow the PR template (when relevant) (this IS the template!)
 - Follow the [[https://medium.com/@biratkirat/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385][Boy Scout Rule]]: leave the code cleaner than how you found
   it: fix typos, indentation, minor refactoring, DCE, forgotten
-  linting, etc
+  linting, expand tests, etc
 - Streamline/automate as much of this as possible

@@ -1,0 +1,54 @@
+#+title: Interesting Clojure Functions
+
+** =cond->=
+
+** =juxt=
+
+** =comp=
+
+** =partial=
+
+** =reduce/fold=
+
+** =condp=
+
+** =loop/recur=
+
+** =into=
+
+** =interpose/interleave=
+
+** =group-by/partition-by=
+
+** =zipmap=
+
+** =lazy-seq=
+
+** =walk/postwalk/prewalk=
+
+** =cond->/some->=
+
+** =lazy-cat=
+
+** =map-indexed=
+
+** =future=
+
+** =memoize=
+
+
+* Concepts
+
+** Laziness
+
+** concurrency (agents, atoms, refs)
+
+** Spec
+
+** Collections vs Sequences
+
+** Transducers
+
+* Interesting Example Problems
+
+fib, primes, fac, sum-squares, fizz-buzz

@@ -34,8 +34,8 @@
 - Alert a reviewer (on slack) when this is ready for eyes
 - Tell QA you’re ready for them to test
 - Ensure stakeholders are aware of the changes
-- Watch for github notifications on feedback (browser alerter
-  extension recommended)
+- Watch for github notifications on feedback (browser alert extension)
+- Fix/discuss/resolve all conversations
 
 ** Settings
 - Assign to yourself

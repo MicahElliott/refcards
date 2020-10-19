@@ -1,14 +1,108 @@
-#+title: Checklist: Docstrings
+#+title: Docstrings Guide
+
+This guide describes what should be specified in a Clojure file to
+achieve consistent and concise docstrings at a namespace, function,
+and var level.
 
 ** Namespace/Module Level
 
-- some term definitions and conventions used
-- how and why some things were implemented
-- maybe TODOs
-- gotchas/quirks
+- Some term definitions, conventions used, scales, best practices, etc
+- List of public functions, separated by side-effecting vs pure
+- How and why some things were implemented
+- Who are the significant users
+- Who this NS significantly calls out to (othes NSs, systems)
+- Global side effects
+- Maybe TODOs
+- Gotchas/Quirks
+- Indent at same level as starting quote (2 spaces, not 3)
+
+Someone should be able to understand most things about the namespace
+by reading just its NS docstring. But keep it somewhat short –
+extensive guides/references should live elsewhere and be referenced.
+
+*** Example Namespace
+
+#+begin_src clojure
+(ns fission.reactor.core.disaster-mitigation
+  "Handle power plant disasters. (one-line concise description)
+
+  A longer description of what this NS accomplishes, who it calls out
+  to (third parties/APIs, etc), how algos work, use of
+  database/crm/queue, gotchas, todos, shortcomings,
+  impending changes, deprecations, references to more docs, etc.
+
+  ## Public
+  - `remove-dangerous-data`
+  - `notify-authorities` (don’t ever call this!)
+  - `sound-alarm!` (side-effects)
+  - `clean-up-spill` (deprecated)
+
+  ## Terms (some processors support `::` for definition lists)
+  - ACUS :: Abstract Cover-Up Service (http://...)
+  - Cooling Tower :: another safety process we should …
+  - ABC :: Adverse … (http://...)
+
+  ## Usage by
+  - waste-manager
+  - mediaapi
+  - authroute
+
+  ## Areas for improvement
+  - missing tests around spillage value types
+  "
+  (:require …
+#+end_src
 
 ** Function Level
 
-- variable descriptions
-- return value
-- imperative of purpose
+- Use imperative mood
+- OK if docstring nearly repeats the name of the meaningfully named function
+- Short one-line summary on own line, with period (good for folding)
+- Prose descriptions mentioning parameters (inputs) and types/boundaries
+- Return value (often as own line/sentence)
+- Use Klipse for an example (when useful and pure)
+
+*** Example Function
+
+#+begin_src clojure
+(defn bury-waste!
+  "Dispose of toxic waste.
+  Look up the `facility` in order to …
+  Return a map containing an updated `:toxicity` level.
+  SIDE-EFFECT: Accesses secret files from …
+  ~~~klipse  ; wouldn’t actually do this since side-effect
+  (bury-waste :underground 5)
+  => {:toxicity 100, …}
+  ~~~"
+  [facility load sec-level]
+  ;; Here we really should detect if rats are present before …
+  …)
+#+end_src
+
+** Var Level
+
+*** Example Var
+
+#+begin_src clojure
+(def some-var
+  "A map of emergency procedures keyed with `transitions`"
+  {:decontaminate …
+   :cool-waste …})
+#+end_src
+
+** Tips
+
+- Use a spell checker (Emacs has =flyspell-prog-mode=)
+- Keep things short and compact
+- Use markdown (some tools can process it)
+- Document vars too!
+- Reserve ;;- and ;-style comments for non-documentation notes
+- Don’t need to document everything (though it’s not a terrible goal)
+- Kondo has a docstring coverage checker that can be enabled
+- Use Codox to generate docs, S3 to host statically generated docs
+
+** References/Idea Sources
+
+- [[https://github.com/weavejester/codox][Codox documentation generator]]
+- [[https://github.com/viebel/codox-klipse-theme][Klipse Codox theme]]
+- https://www.python.org/dev/peps/pep-0257/

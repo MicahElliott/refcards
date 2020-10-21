@@ -7,7 +7,7 @@ and var level.
 ** Namespace/Module Level
 
 - Some term definitions, conventions used, scales, best practices, etc
-- List of public functions, separated by side-effecting vs pure
+- List of public functions, separated by side-effecting/mutating vs pure
 - How and why some things were implemented
 - Who are the significant users
 - Who this NS significantly calls out to (othes NSs, systems)
@@ -19,6 +19,8 @@ and var level.
 Someone should be able to understand most things about the namespace
 by reading just its NS docstring. But keep it somewhat short –
 extensive guides/references should live elsewhere and be referenced.
+
+Sort required NSs and consult the [[https://stuartsierra.com/2016/clojure-how-to-ns.html][namespace guide]] for other best practices.
 
 *** Example Namespace
 
@@ -100,6 +102,9 @@ extensive guides/references should live elsewhere and be referenced.
 - Don’t need to document everything (though it’s not a terrible goal)
 - Kondo has a docstring coverage checker that can be enabled
 - Use Codox to generate docs, S3 to host statically generated docs
+- Organize files into sections based on functionality, pure/mutating,
+  private/public; sections can be indicated with [[https://github.com/purcell/page-break-lines][some tooling]]
+  (line-breaks and =;;;=-style comment/section markers)
 
 ** References/Idea Sources
 

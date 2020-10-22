@@ -1,0 +1,13 @@
+#+title: Dired Cheatsheet
+
+- m :: mark (main thing you do)
+- u :: unmark
+- w :: copy file name
+- s :: sort by
+- U :: unmark all
+- D :: delete
+- R :: rename
+- C :: copy
+- M :: chmod
+- + :: create dir
+- * :: regexp mark

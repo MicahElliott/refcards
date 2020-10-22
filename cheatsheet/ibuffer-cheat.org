@@ -1,0 +1,14 @@
+#+title: Ibuffer Cheatsheet
+
+- m :: mark
+- u :: unmark
+- U :: unmark all
+- d :: mark specifically for deletion
+- k :: remove from view
+- g :: undo k-filtering
+- D :: kill
+- t :: invert-toggle all marks
+- * s :: search-mark all matching
+- % n :: regex-mark
+- / m :: filter by mode
+- / / :: remove all filters

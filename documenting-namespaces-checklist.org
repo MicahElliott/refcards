@@ -12,6 +12,9 @@ and var level.
 - Who are the significant users
 - Who this NS significantly calls out to (othes NSs, systems)
 - Global side effects
+- Database accesses
+- API routes
+- Deprecations
 - Maybe TODOs
 - Gotchas/Quirks
 - Indent at same level as starting quote (2 spaces, not 3)

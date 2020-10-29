@@ -1,0 +1,61 @@
+#+TITLE: HTTP
+
+** Codes
+
+*** Success
+- 200 :: OK
+- 201 :: Created (POST, PUT)
+- 204 :: No Content
+
+*** Redirection
+- 304 :: Not modified (for caching)
+- 301 :: Moved permanently (new URL given in response)
+
+*** Client Errors
+- 400 :: Bad request (invalid syntax)
+- 401 :: Unauthorized (client must authenticate)
+- 403 :: Forbidden (identity is known, but…)
+- 404 :: Not found
+- 408 :: Request timeout
+- 409 :: Conflict
+- 429 :: Too many requests
+
+*** Server Errors
+- 500 :: Internal server error
+- 501 :: Not implemented
+- 502 :: Bad gateway
+- 503 :: Service unavailable (down for maintenance, overloaded)
+- 504 :: Gateway timeout
+
+** Curl
+
+- -X :: HEAD | GET | POST (create) | PUT (update) | DELETE
+- -H :: 'Content-Type: application/json'
+- -H :: 'Accept: application/json | application/json | text/html | image/png'
+- -H :: 'Authorization: Bearer $TOKEN' (JWT)
+- -i :: include headers
+- -d :: '{"key": "val"}'
+- -d :: 'param1=val1&p2=v2'
+- -u :: user:pswd (https://USER:PSWD@example.com/…)
+- -F :: profile=@portrait.jpg (file)
+- -L :: follow redirects
+- -k insecure
+
+** Request/Response
+
+#+begin_src http
+GET / HTTP/1.1
+Host: www.example.com
+
+--
+
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 155
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+Server: Apache/1.3.3.7 (Unix) (Red-Hat/Linux)
+ETag: "3f80f-1b6-3e1cb03b"
+Accept-Ranges: bytes
+Connection: close
+#+end_src

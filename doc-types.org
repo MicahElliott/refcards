@@ -1,52 +1,92 @@
-#+title: Document Types
+#+title: Project Document Types (for developers)
 
-This describes either a heavily documented project or a standalone
-team/company docs repo.
+This README theoretically describes either a heavily documented
+project or a standalone team/company docs repo.
 
-- Glossary :: most of the key terms
+** Files
 
-- Style Guide :: refer to a community guide, plus augmentation, and tooling
+- README :: How we document: this very guide!, document generation,
+  the list of documents, what belongs outside (confluence, etc)
 
-- ADRs :: Use the ADR tool to generate from your template
+- Glossary :: Most of the key terms/acronyms/variable-name
+  conventions, etc, and their explanations — those used widely in
+  company (likely 50-300 terms)
 
-- Contributing :: Rules for how to make changes, plus list of devs who contribute
+- Noobs :: Getting started guide: what to install, tools/env setup,
+  troubleshooting (lots of refs to other docs)
+
+- Contributing :: Rules for how to get involved/make changes, plus
+  list of devs who contribute (can be part of /Noobs/)
+
+- Customers :: Who this team/project/org/company serves
+
+- WaysOfWork (WOW) :: story lifecycle and workflow,
+  agile/scrum/kanban, release process basics, environments for dev,
+  stage, prod, CI tools, formats (Markdown/RST/AsciiDoc), TDD or BDD,
+  test coverage, philosophy, Jira vs git vs Github, QA vs
+  developer testing, refs to more docs, [[https://medium.com/@patrickporto/4-branching-workflows-for-git-30d0aaee7bf][branching workflow]]
+
+- StyleGuide :: refer to a community guide, our augmentation,
+  tooling (linters), docstrings (markdown inside?)
+
+- Editors :: Configs: Everyone should try to get their editors to match
+  the style guide; this is a list of configs to conform them
+
+- History :: How this project has evolved (might be handled by ADRs,
+  see below)
+
+- Achitecture :: overview and set of diagrams (see also: /ADRs/ below)
+
+- Tools :: Sanctioned tools: PostgreSQL, Kafka, Salesforce (sometimes
+  needed by legal, and see /Vendor/ below)
+
+- Libs :: Sanctioned libraries: comparison experiences: frameworks,
+  parsers, etc
 
 - Changelog :: Living list of changes by release (maybe automatic and
   managed elsewhere)
 
-- README :: Explain the repo and what still belongs in Confluence;
-  list the pertinent docs in the repo
+- Config :: describe categories of configs and environment and how
+  managed in project(s)
 
-- Screenshots/flow ::
+- Communication :: When to still use email, slack culture and
+  important channels
 
-- Noobs :: Getting started guide
+- Owners :: whom (team leads, project owners) to consult with
+  questions, emergency contacts, pager duty schedule, public inbox
+  owners, vendor contacts, release managers, site owners
 
-- Editor Configs :: Everyone should try to get their editors to match
-  the style guide; this is a list of configs to conform them
+- Repos :: the living repos we maintain and short descriptions of each
 
-- ENV/Config :: describe categories of configs
+- Sites :: the living sites we maintain: mobile clients, internal
+  sites, customer facing, blogs, support
 
-- Education :: List of books/pages to get up-to-speed on deps
+- OpenSource :: projects we own/contribute/donate to
 
-- Customers :: Who this project serves
-
-- History :: How this project has evolved (might be handled by ADRs)
-
-- PR Template :: Used by github to seed each new PR
-
-- Ways We Work :: story lifecycle and workflow, agile/scrum/kanban,
-  release process, environments for dev, stage, prod, CI tools
-
-- Testing :: how do we track/care about code coverage, how much do
-  devs test vs QA
-
-- Documentation :: How we document: here (of course!), docstrings (and
-  their style, eg, markdown)
+- Roadmap :: Might be a tool/confluence, but could be a doc
 
 ** Checklists
 
-- PR Checklist :: All the steps that should be taken before asking for
-  review
+- PRTemplate :: All the steps that should be taken before asking for
+  review, can be seeded in Github
+
+- Releasing :: Steps to make a release; also covers deploying to
+  multiple envs, blog post, docs to update
+
+- Testing :: how do we track/care about code coverage, how much do
+  devs test vs QA, what test accounts to use, unit/integrations/e2e
+
+** Directories
+
+- Testplans :: Significant features list of things to test
+
+- ADRs :: Use [[https://github.com/npryce/adr-tools][ADR tooling]] to generate from your template
+
+- Demos :: devs/product showing off how something is done (probably
+  hosted elsewhere, so maybe just a doc index)
+
+- Vendor :: a doc for each vendor tool: access, setup, usage (netlify,
+  logrocket, S3, DigitalOcean, etc)
 
 ** Generated
 
@@ -55,3 +95,11 @@ team/company docs repo.
 - [[https://github.com/gdeer81/marginalia][Marginalia]] :: literate programming
 
 - API docs :: Swagger/reitit (most likely), how to access/generate them
+
+** Other Tools
+
+- [[https://docusaurus.io/en/][Docusaurus]]
+
+- [[https://www.mkdocs.org/][MkDocs]]
+
+- [[https://github.com/npryce/adr-tools][ADR Tools]]

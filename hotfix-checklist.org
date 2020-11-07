@@ -1,0 +1,27 @@
+#+title: Hotfix Checklist
+
+It’s Friday afternoon and you’ve done it again.
+
+1. Tell your team channel that the hotfix is needed (add facepalm),
+   and that you’re going to have a patch ASAP
+
+1. Create a new Jira (if no one has for you yet), referring to the
+   original
+
+1. Create a new branch off the day’s RC (eg: 20201110), not master!
+
+1. Create a PR and get some quick eyes on it
+
+1. Edit the PR to point to the new RC target, not master!
+
+1. Probably should test it now unless totally trivial (right)
+
+1. Discuss with QE lead to confirm it’s high priority, and ensure she
+   wants it to go in
+
+1. Merge
+
+1. Announce on release channel that the hotfix is merged (it’ll need
+   to be deployed), with reference to the Jira and PR
+
+1. Make another PR to get the change from the RC onto maste

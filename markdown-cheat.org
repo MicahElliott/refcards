@@ -5,19 +5,29 @@
 - =C-c C-c c= :: Check refs
 
 ** Style
-- =C-c C-s b= :: blockquote
+- =C-c C-s b= :: bold
 - =C-c C-s c= :: code
-- =C-c C-s d= :: strikethrough
+- =C-c C-s s= :: strikethrough
 - =C-c C-s e= :: em/italic
-- =C-c C-s s= :: strong/bold
+- =C-c C-s k= :: keyboard tags
+- =C-c C-s C= :: code block
+- =C-c C-s Q= :: blockquote region
 
 ** Anchors (Links)
-- =C-c C-a L= :: ref/Link
 - =C-c C-a l= :: link
 - =C-c C-a f= :: footnote
 - =C-c C-a r= :: ref
 - =C-c C-a u= :: URI
 - =C-c C-a w= :: wiki link
+
+** Toggles (x)
+- =C-c C-x C-l= :: toggle url hiding
+- =C-c C-x RET= :: toggle markdown hiding
+
+** Titles
+- =C-c C-t @= :: underline
+- =C-c C-t != :: double underine
+- =C-c C-t h= :: dwim
 
 
 (Ironic that this is a .org file.)

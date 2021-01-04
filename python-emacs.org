@@ -1,0 +1,46 @@
+#+title: Python on Emacs
+
+* python/pyenv (en-py)
+
+Enable pyenv: =en-py=
+
+Enable the appropriate python version: =pyenv=
+
+* poetry
+
+Set up for the virtualenv location that elpy seems to want. On Mac,
+this writes to
+=/Users/micahelliott/Library/Application Support/pypoetry/config.toml=
+
+#+begin_src shell
+poetry config virtualenvs.path /Users/micahelliott/.virtualenvs
+#+end_src
+
+Create a project: =poetry new demo=
+
+OR, create a new empty:
+
+#+begin_src shell
+mkdir demo
+poetry init
+#+end_src
+
+* venv
+
+I’m not sure what poetry is using for virtualenvs, but elpy suggests
+it wants to use pyvenv. Emacs will complain if you haven’t put your
+virtualenvs at =~/.virtualenvs=
+
+* elpy
+
+** Completion
+See the comments here to find adding this to =init.el=
+https://emacs.stackexchange.com/a/30970/11025
+
+#+begin_src elisp
+(setq python-shell-completion-native-enable nil)
+#+end_src
+
+** REPL
+
+=C-c C-c= to start a REPL. =C-y …= to send chunks to it.

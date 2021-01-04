@@ -1,20 +1,22 @@
 #+title: Treemacs Cheatsheet
 
-- n    :: /[n]/ext node
-- p    :: /p/rev node
+- n    :: next node
+- p    :: prev node
 - u    :: up node
-- M-n  :: next /s/ibling
-- M-p  :: prev /S/ibling
+- M-n  :: next sibling
+- M-p  :: prev Sibling
 - P    :: preview/peek
 - RET  :: open
 - or   :: open recently used window
 - oaa  :: open with Ace
-- th   :: toggle /H/idden files
+- C-2 TAB :: open/expand 2 levels deep
+- th   :: toggle Hidden files
 - ov   :: open in vertical split
 - oh   :: open in horizontal split
-- cf   :: /n/ew file
-- cd   :: /n/ew dir
-- R    :: /r/ename dir/file
+- cf   :: new file
+- cd   :: new dir
+- R    :: rename dir/file
 - H    :: collapse
-- d    :: /d/elete node
+- m    :: mode node
+- d    :: delete node
 - yy   :: copy path

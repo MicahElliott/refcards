@@ -1,0 +1,36 @@
+#+title: Clojure Core Async
+
+** Overview
+
+Threads …
+
+** Functions
+
+- chan
+  - Create outside go block
+  - one for in, one for out
+
+
+- go
+  - can create thousands of go-blocks
+
+- thread
+  - vs future
+  - returns a channel
+
+- >! <!
+  - parking put, take
+  - only can be used inside go-block
+
+- >!! <!!
+  - breading put, take
+
+- alts!!
+  - use result of first successful channel op among a collection of ops
+
+- thread vs process
+
+** Rules
+
+- Use blocking put/take with thread if performing long-running task
+  before put/take

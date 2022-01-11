@@ -3,8 +3,10 @@
 ** Variables/Identifiers
 
 - a/arg :: argument, atom
+- acc :: accumulator
 - b :: other argument or beginning
 - c/cnt :: character or collection or count
+- cur :: the current element
 - data/d :: singular anything or day
 - el/e / ex/e :: element / exception / end
 - f :: function
@@ -16,13 +18,13 @@
 - l/lo :: list or low
 - mid/m :: middle or map or month
 - n :: integer for count
-- o ::
-- p ::
+- o/opt :: option
+- p/param :: parameter
 - qry/q :: query
 - r :: result
 - s :: sequence (may be a string)
 - tmp/t :: temporary anything or time
-- u ::
+- u :: user
 - val/v :: value
 - w ::
 - x :: misc, coordinate

@@ -15,6 +15,8 @@ and var level.
 - Database accesses
 - API routes
 - Deprecations
+- Tags
+- See also
 - Maybe TODOs
 - Gotchas/Quirks
 - Indent at same level as starting quote (2 spaces, not 3)
@@ -23,7 +25,8 @@ Someone should be able to understand most things about the namespace
 by reading just its NS docstring. But keep it somewhat short –
 extensive guides/references should live elsewhere and be referenced.
 
-Sort required NSs and consult the [[https://stuartsierra.com/2016/clojure-how-to-ns.html][namespace guide]] for other best practices.
+Sort required NSs and consult the [[https://stuartsierra.com/2016/clojure-how-to-ns.html][Sierra namespace guide]] and [[https://martinklepsch.org/posts/writing-awesome-docstrings.html][Klepsch
+Guide]] for other best practices.
 
 *** Example Namespace
 
@@ -35,6 +38,8 @@ Sort required NSs and consult the [[https://stuartsierra.com/2016/clojure-how-to
   to (third parties/APIs, etc), how algos work, use of
   database/crm/queue, gotchas, todos, shortcomings,
   impending changes, deprecations, references to more docs, etc.
+
+  Tags: hot, algo, secrets, deprecated
 
   ## Public
   - `remove-dangerous-data`
@@ -54,6 +59,7 @@ Sort required NSs and consult the [[https://stuartsierra.com/2016/clojure-how-to
 
   ## Areas for improvement
   - missing tests around spillage value types
+
   "
   (:require …
 #+end_src

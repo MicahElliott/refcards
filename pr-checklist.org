@@ -1,5 +1,7 @@
 #+title: Pull Request Checklist
 
+* How to PR
+
 ** Prework
 - Run tests, record timings
 - Open key source files to understand change spots
@@ -10,29 +12,38 @@
 - Determine deliverables: docs, migrations, special testing
 
 ** Document
-- Update the ticket with better description
 - Document shortcuts and trade-offs
 - Explain what changed and why
 - Take/attach screenshots
 - Add your own inline comments to PR
 - Indicate if there are known performance impacts
 - Ensure you have docstrings for new functions, and spell-check them
+- Add indicators around any new code that has side effects, and
+  isolate them
 - Add/improve top-level docstring
+- Describe how to exercise any new functionality
 
 ** Commit, clean up
-- Follow the team commit conventions: length, tags
+- Follow the team commit conventions: length, gommit-tags:
+  feat/sparkles, fix/bug, docs/books, build/wrench, refactor/cop,
+  test/check, security/lock, breaking-change/bomb
 - Run any linters that aren’t part of CI
+- Check manually for style/convention/naming violations and consistency
 - Organize commits into meaningful units; ideally none in error states
 - Squash down to a minimal set of changes, often one
+- But separate logical pieces into (non-breaking) commits
 - Make [[https://chris.beams.io/posts/git-commit/][excellent]] [[https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/][commit]] [[https://gist.github.com/turbo/efb8d57c145e00dc38907f9526b60f17][messages]], and consider using [[https://github.com/carloscuesta/gitmoji/commits/master][emojis]]!
 - If for some reason you have to make a bunch of squashable commits,
-  might as well [[http://whatthecommit.com/][have fun with it]].
+  might as well [[http://whatthecommit.com/][have fun with it]]
+- Think about structure: is now the time to add a new NS?
 
 ** Communicate
 - Pair with someone who knows background, capture notes/screenshots
 - Push back early if scope seems wrong/unclear
 - Alert a reviewer (on slack) when this is ready for eyes
-- Tell QA you’re ready for them to test
+- Tell QA you’re ready for them to test and expain how before handing
+  off
+- Understand the timing of the feature going live
 - Ensure stakeholders are aware of the changes
 - Watch for github notifications on feedback (browser alert extension)
 - Fix/discuss/resolve all conversations
@@ -58,3 +69,13 @@
   it: fix typos, indentation, minor refactoring, DCE, forgotten
   linting, expand tests, etc
 - Streamline/automate as much of this as possible
+
+* How to Review
+
+- Set up alerts and be on top of them: keeping others moving forward
+  is everyone’s top priority!
+- Check that the “How to PR” process was followed
+- Pull code into editor; don’t just glance over github
+- If you haven’t CI-automated linting, etc, run the tools manually
+- Look for side effects and ensure they’re called out
+- Try pushing some data through

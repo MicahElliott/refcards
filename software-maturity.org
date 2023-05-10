@@ -1,0 +1,42 @@
+This is beyond what we need (little too much CMM-like), but has some nice ideas and graphs:
+https://about.gitlab.com/direction/maturity/
+
+Their "CM" seems to mean Category Maturity. We could come up with our own
+categories and track something a little like their top-level. You'll have
+different ideas than mine, but I figured I'd jot some down that have been on
+my mind that say something about our "product/team/service maturity" that are
+tangible and trackable:
+
+- CI of all master commits
+- reliable/consistent release cadence (goal to improve to 1/day)
+- E2E test suite (with % of feature coverage indicated)
+- unit test coverage reporting and tracking
+- feature roll-back capability
+- consistent and repeatable yet flexible, documented dev personal setups for full dev and testing
+- a/b and feature-flagged/dark features
+- all code namespaces documented to some degree (almost there)
+- auto-correction/-checking correctness/consistency tooling enforced (getting there with cljfmt and kondo but more to do)
+- system architecture organized as interfaces (polylith or just marking privates or moving to sub-NSs)
+- official deprecation process (removal of old systems/modules/services/data/flags)
+- multi-environment for test/stage/prod/prod-like
+- data anonymization and reduction process for creating/exporting DBs used by non-admin devs
+- data dictionary describing schema (dbdoc, but needs much better coverage and update process)
+- restorable backups of DB and SFDC within X hours (and all the things we get for "free" from heroku/sfdc)
+- some uptime/HA track record (4 9s?)
+- outage log documenting major outages/problems and resolution time
+- security audits/certifications (broad, but also covers: secrets mgmt, any industry best practices, where to improve)
+- automated alerts of dependency updates for vulnerabilities and potentially breaking changes
+- all the official stuff we do with Jira stories, release notes, etc (https://github.com/conventional-changelog/conventional-changelog would be nice)
+- roadmap releases on-time track record (by what % do we miss)
+- logging system with 1-year history (done: splunk)
+- alerting system and process for adding new alerts for any delicate new features (need to train more devs on this)
+- tracking of prod data access for internal and third-party systems (mostly done)
+- master deploy time of all 4 projects in under 10 minutes (I think we get down to ~3 minutes)
+- list of all third-party service dependencies and mitigation plans for their outages, and tracking of the reliability (docusign, ced/sonepar, afc/nls, box, etc)
+- developer tenure tracking (how many collective years on team, how long do they stay)
+- customer support stats, nps, etc (maybe this is outside what we care about)
+- source code management process (pairing, code reviews, extra-eyes)
+- socialization process of new features and system inner workings (demos, intakes, and devmtgs presos?)
+- on-call prod support team/process/hours/sla
+- innovation/R&D process/plan for getting/staying ahead of competition (auto-detect panels in images, auto-convert submitted paper docs to data, etc)
+- infrastructure capacity (documented schedule/plan for when/how to add more machines, increase licenses, etc)

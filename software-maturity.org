@@ -23,6 +23,7 @@ tangible and trackable:
 - data dictionary describing schema (dbdoc, but needs much better coverage and update process)
 - restorable backups of DB and SFDC within X hours (and all the things we get for "free" from heroku/sfdc)
 - some uptime/HA track record (4 9s?)
+- public status indicator page for outages
 - outage log documenting major outages/problems and resolution time
 - security audits/certifications (broad, but also covers: secrets mgmt, any industry best practices, where to improve)
 - automated alerts of dependency updates for vulnerabilities and potentially breaking changes
